@@ -1,6 +1,6 @@
 package net.zelenaya.sorm.config;
 
-import net.zelenaya.sorm.dao.UserDao;
+import net.zelenaya.sorm.dao.application.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

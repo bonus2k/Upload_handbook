@@ -1,6 +1,7 @@
-package net.zelenaya.sorm.dao;
+package net.zelenaya.sorm.dao.application;
 
-import net.zelenaya.sorm.repo.UserRepo;
+import net.zelenaya.sorm.repo.application.UserRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -11,12 +12,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserDao implements UserDetailsService {
 
-    final
+    @Autowired
     UserRepo userRepo;
 
-    public UserDao(UserRepo userRepo) {
-        this.userRepo = userRepo;
-    }
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {

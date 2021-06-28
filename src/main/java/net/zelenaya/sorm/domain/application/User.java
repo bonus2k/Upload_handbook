@@ -1,5 +1,6 @@
-package net.zelenaya.sorm.domain;
+package net.zelenaya.sorm.domain.application;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
@@ -10,7 +11,7 @@ import java.util.Collection;
 
 @Entity
 @Table(name = "usr")
-@Getter @Setter
+@Data
 public class User implements UserDetails {
 
     @Id
