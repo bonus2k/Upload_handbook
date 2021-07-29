@@ -41,7 +41,6 @@
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript">
 
-
         $(document).ready(function(){
 
             $('.input-daterange').datepicker({

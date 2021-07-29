@@ -16,12 +16,12 @@
                 </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/alertFilter"><i class="far fa-database"></i> Setting DB</a>
+                        <a class="nav-link" href="/settings"><i class="far fa-cogs"></i> Setting</a>
                     </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="/orderFilter"><i class="far fa-folder-tree"></i> Setting FTP</a>
-                        </li>
+<#--                        <li class="nav-item">-->
+<#--                            <a class="nav-link" href="/orderFilter"><i class="far fa-folder-tree"></i> Setting FTP</a>-->
+<#--                        </li>-->
 
                     <li class="nav-item">
                         <a class="nav-link" href="/user/trade"><i class="far fa-file-alt"></i> Log</a>

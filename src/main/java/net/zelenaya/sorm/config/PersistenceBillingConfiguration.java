@@ -1,6 +1,6 @@
 package net.zelenaya.sorm.config;
 
-import net.zelenaya.sorm.domain.application.SettingsAppDBImpl;
+import net.zelenaya.sorm.domain.application.settings.SettingsAppDBImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 
 @Configuration
-@PropertySource(value = {"file:db.properties"})
+@PropertySource(value = {"file:settings.properties"})
 @EnableJpaRepositories(
         basePackages = "net.zelenaya.sorm.repo.billing",
         entityManagerFactoryRef = "billingEntityManager",
